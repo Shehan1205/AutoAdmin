@@ -8,7 +8,7 @@ import com.github.isuru20ip.autoadmin.entity.Student;
  * @author ISURU
  */
 public class MainFrame extends javax.swing.JFrame {
-    private final StudentController studentController;  ;
+    private final StudentController studentController;
     public MainFrame() {
         initComponents();
         studentController = new StudentController();
