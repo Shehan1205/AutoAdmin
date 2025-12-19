@@ -1,13 +1,9 @@
 package com.github.isuru20ip.autoadmin.dao.core;
 
-import com.github.isuru20ip.autoadmin.config.HibernateUtil;
 import com.github.isuru20ip.autoadmin.dao.AdminDAO;
 import com.github.isuru20ip.autoadmin.entity.Admin;
 import com.github.isuru20ip.autoadmin.util.AdminType;
 import com.github.isuru20ip.autoadmin.util.CustomExceptions;
-import org.hibernate.Session;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
