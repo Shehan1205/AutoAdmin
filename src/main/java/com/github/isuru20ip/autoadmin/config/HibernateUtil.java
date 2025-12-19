@@ -1,6 +1,7 @@
-package isuru.config;
+package com.github.isuru20ip.autoadmin.config;
 
-import isuru.entity.Student;
+import com.github.isuru20ip.autoadmin.entity.Admin;
+import com.github.isuru20ip.autoadmin.entity.Student;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.slf4j.Logger;
@@ -29,7 +30,7 @@ public class HibernateUtil {
                 // 3. Register entity classes programmatically (if you didn't use <mapping> in XML)
                 // It's good practice to do this here even if you use XML mapping.
                 configuration.addAnnotatedClass(Student.class);
-                // configuration.addAnnotatedClass(Payment.class);
+                configuration.addAnnotatedClass(Admin.class);
 
                 // 4. Build the SessionFactory
                 sessionFactory = configuration.buildSessionFactory();
